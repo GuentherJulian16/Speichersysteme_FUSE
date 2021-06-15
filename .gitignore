@@ -4,3 +4,10 @@
 /exercise1_hello_world/cmake_install.cmake
 /exercise1_hello_world/compile_commands.json
 /exercise1_hello_world/Makefile
+
+/exercise3_my_fuse/bin/*
+/exercise3_my_fuse/CMakeFiles/*
+/exercise3_my_fuse/CMakeCache.txt
+/exercise3_my_fuse/cmake_install.cmake
+/exercise3_my_fuse/compile_commands.json
+/exercise3_my_fuse/Makefile
