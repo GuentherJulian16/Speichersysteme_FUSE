@@ -1,0 +1,6 @@
+/exercise1_hello_world/bin/*
+/exercise1_hello_world/CMakeFiles/*
+/exercise1_hello_world/CMakeCache.txt
+/exercise1_hello_world/cmake_install.cmake
+/exercise1_hello_world/compile_commands.json
+/exercise1_hello_world/Makefile
