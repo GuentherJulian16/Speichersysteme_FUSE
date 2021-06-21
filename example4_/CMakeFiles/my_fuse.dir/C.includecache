@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/exercise3_my_fuse/my_fuse.c
+fuse.h
+-
+stdio.h
+-
+unistd.h
+-
+sys/types.h
+-
+time.h
+-
+string.h
+-
+stdlib.h
+-
+
