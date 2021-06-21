@@ -1,13 +1,3 @@
-/*
-  FUSE: Filesystem in Userspace
-  Copyright (C) 2001-2007  Miklos Szeredi <miklos@szeredi.hu>
-
-  This program can be distributed under the terms of the GNU GPL.
-  See the file COPYING.
-
-  gcc -Wall `pkg-config fuse --cflags --libs` hello.c -o hello
-*/
-
 #define FUSE_USE_VERSION 30
 
 #include <fuse.h>
@@ -22,13 +12,13 @@ static const char *hello_path = "/hello";
 static void *hello_init(struct fuse_conn_info *conn,
 		      struct fuse_config *cfg)
 {
-	printf("DEBUG: init called\n");
+	printf("DEBUG: hello from init\n");
 	return NULL;
 }
 
 static int hello_access(const char *path, int mask)
 {
-	printf("DEBUG: access called\n");
+	printf("DEBUG: hello from access\n");
 	int res;
 
 	res = access(path, mask);
@@ -40,7 +30,7 @@ static int hello_access(const char *path, int mask)
 
 static int hello_readlink(const char *path, char *buf, size_t size)
 {
-	printf("DEBUG: readlink called\n");
+	printf("DEBUG: hello from readlink \n");
 	int res;
 
 	res = readlink(path, buf, size - 1);
@@ -53,7 +43,7 @@ static int hello_readlink(const char *path, char *buf, size_t size)
 
 static int hello_mknod(const char *path, mode_t mode, dev_t rdev)
 {
-	printf("DEBUG: mknod called\n");
+	printf("DEBUG: hello from mknod \n");
 	int res;
 
 	//res = mknod_wrapper(AT_FDCWD, path, NULL, mode, rdev);
@@ -65,7 +55,7 @@ static int hello_mknod(const char *path, mode_t mode, dev_t rdev)
 
 static int hello_mkdir(const char *path, mode_t mode)
 {
-	printf("DEBUG: mkdir called\n");
+	printf("DEBUG: hello from mkdir \n");
 	int res;
 
 	res = mkdir(path, mode);
@@ -77,7 +67,7 @@ static int hello_mkdir(const char *path, mode_t mode)
 
 static int hello_unlink(const char *path)
 {
-	printf("DEBUG: unlink called\n");
+	printf("DEBUG: hello from unlink \n");
 	int res;
 
 	res = unlink(path);
@@ -89,7 +79,7 @@ static int hello_unlink(const char *path)
 
 static int hello_rmdir(const char *path)
 {
-	printf("DEBUG: rmdir called\n");
+	printf("DEBUG: hello from rmdir \n");
 	int res;
 
 	res = rmdir(path);
@@ -101,7 +91,7 @@ static int hello_rmdir(const char *path)
 
 static int hello_symlink(const char *from, const char *to)
 {
-	printf("DEBUG: symlink called\n");
+	printf("DEBUG: hello from symlink \n");
 	int res;
 
 	res = symlink(from, to);
@@ -113,7 +103,7 @@ static int hello_symlink(const char *from, const char *to)
 
 static int hello_rename(const char *from, const char *to, unsigned int flags)
 {
-	printf("DEBUG: rename called\n");
+	printf("DEBUG: hello from rename \n");
 	int res;
 
 	if (flags)
@@ -128,7 +118,7 @@ static int hello_rename(const char *from, const char *to, unsigned int flags)
 
 static int hello_link(const char *from, const char *to)
 {
-	printf("DEBUG: link called\n");
+	printf("DEBUG: hello from link \n");
 	int res;
 
 	res = link(from, to);
@@ -141,7 +131,7 @@ static int hello_link(const char *from, const char *to)
 static int hello_chmod(const char *path, mode_t mode,
 		     struct fuse_file_info *fi)
 {
-	printf("DEBUG: chmod called\n");
+	printf("DEBUG: hello from chmod \n");
 	(void) fi;
 	int res;
 
@@ -155,7 +145,7 @@ static int hello_chmod(const char *path, mode_t mode,
 static int hello_chown(const char *path, uid_t uid, gid_t gid,
 		     struct fuse_file_info *fi)
 {
-	printf("DEBUG: chown called\n");
+	printf("DEBUG: hello from chown \n");
 	(void) fi;
 	int res;
 
@@ -169,7 +159,7 @@ static int hello_chown(const char *path, uid_t uid, gid_t gid,
 static int hello_truncate(const char *path, off_t size,
 			struct fuse_file_info *fi)
 {
-	printf("DEBUG: truncate called\n");
+	printf("DEBUG: hello from truncate \n");
 	int res;
 
 	if (fi != NULL)
@@ -185,7 +175,7 @@ static int hello_truncate(const char *path, off_t size,
 static int hello_create(const char *path, mode_t mode,
 		      struct fuse_file_info *fi)
 {
-	printf("DEBUG: create called\n");
+	printf("DEBUG: hello from create \n");
 	int res;
 
 	res = open(path, fi->flags, mode);
@@ -199,7 +189,7 @@ static int hello_create(const char *path, mode_t mode,
 static int hello_write(const char *path, const char *buf, size_t size,
 		     off_t offset, struct fuse_file_info *fi)
 {
-	printf("DEBUG: write called\n");
+	printf("DEBUG: hello from write \n");
 	int fd;
 	int res;
 
@@ -223,7 +213,7 @@ static int hello_write(const char *path, const char *buf, size_t size,
 
 static int hello_statfs(const char *path, struct statvfs *stbuf)
 {
-	printf("DEBUG: statfs called\n");
+	printf("DEBUG: hello from statfs \n");
 	int res;
 
 	res = statvfs(path, stbuf);
@@ -235,7 +225,7 @@ static int hello_statfs(const char *path, struct statvfs *stbuf)
 
 static int hello_getattr(const char *path, struct stat *stbuf)
 {
-	printf("DEBUG: getattr called\n");
+	printf("DEBUG: hello from getattr \n");
 	int res = 0;
 
 	memset(stbuf, 0, sizeof(struct stat));
@@ -255,7 +245,7 @@ static int hello_getattr(const char *path, struct stat *stbuf)
 static int hello_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
 			 off_t offset, struct fuse_file_info *fi)
 {
-	printf("DEBUG: readdir called\n");
+	printf("DEBUG: hello from readdir \n");
 	(void) offset;
 	(void) fi;
 
@@ -271,7 +261,7 @@ static int hello_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
 
 static int hello_open(const char *path, struct fuse_file_info *fi)
 {
-	printf("DEBUG: open called\n");
+	printf("DEBUG: hello from open \n");
 	if (strcmp(path, hello_path) != 0)
 		return -ENOENT;
 
@@ -284,7 +274,7 @@ static int hello_open(const char *path, struct fuse_file_info *fi)
 static int hello_read(const char *path, char *buf, size_t size, off_t offset,
 		      struct fuse_file_info *fi)
 {
-	printf("DEBUG: read called\n");
+	printf("DEBUG: hello from read \n");
 	size_t len;
 	(void) fi;
 	if(strcmp(path, hello_path) != 0)
