@@ -1,0 +1,2056 @@
+
+bb_init()
+    conn:
+    proto_major = 7
+    proto_minor = 31
+    async_read = 1
+    max_write = 131072
+    max_readahead = 131072
+    capable = 00000ffb
+    want = 00000010
+    max_background = 0
+    congestion_threshold = 0
+    context:
+    fuse = 7f1597e0
+    uid = 0
+    gid = 0
+    pid = 0
+    private_data = 7f1582a0
+    logfile = 7f1592d0
+    rootdir = /home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir
+    umask = 00000
+
+bb_opendir(path="/", fi=0xabbd0c30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f68a4001fc0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a4001fc0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/.xdg-volume-info", statbuf=0xabbd0c40)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/.xdg-volume-info", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/.xdg-volume-info"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_access(path="/", mask=04)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+
+bb_getattr(path="/", statbuf=0xabbd0c10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_getattr(path="/.Trash", statbuf=0xabbd0c40)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/.Trash", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/.Trash"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/.Trash-1000", statbuf=0xabbd0c40)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/.Trash-1000", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/.Trash-1000"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/autorun.inf", statbuf=0xabbd0c40)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/autorun.inf", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/autorun.inf"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_readdir(path="/", buf=0xa4001e30, filler=0xabe19bc0, offset=0, fi=0xabbd0c30)
+    readdir returned 0x0x7f68a4001ff0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a4001fc0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a4001fc0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/bogus.txt", statbuf=0xabbd0c40)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/bogus.txt", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457678
+    st_mode = 0100664
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d25397
+    st_mtime = 0x60d09eeb
+    st_ctime = 0x60d09eeb
+
+bb_getattr(path="/test", statbuf=0xab3adc40)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/test", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/test"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1458284
+    st_mode = 040775
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_releasedir(path="/", fi=0xab3adc40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a4001fc0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a4001fc0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xabbd0c30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f68a400a770
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xaab8ac10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0xa4002170, filler=0xabe19bc0, offset=0, fi=0xab3adc30)
+    readdir returned 0x0x7f68a400a7a0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xab3adc40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xab3adc30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f689c001000
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c001000
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xaab8ac10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0x9c000f80, filler=0xabe19bc0, offset=0, fi=0xabbd0c30)
+    readdir returned 0x0x7f689c001030
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c001000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c001000
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xabbd0c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c001000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c001000
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xab3adc30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f689c009160
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xaab8ac10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0x9c001000, filler=0xabe19bc0, offset=0, fi=0xabbd0c30)
+    readdir returned 0x0x7f689c009190
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xabbd0c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xab3adc30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f689c009160
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xaab8ac10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0x9c001110, filler=0xabe19bc0, offset=0, fi=0xabbd0c30)
+    readdir returned 0x0x7f689c009190
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xabbd0c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xab3adc30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f689c009160
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xaab8ac10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0x9c001190, filler=0xabe19bc0, offset=0, fi=0xabbd0c30)
+    readdir returned 0x0x7f689c009190
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xabbd0c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xab3adc30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f689c009160
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xaab8ac10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0x9c001210, filler=0xabe19bc0, offset=0, fi=0xabbd0c30)
+    readdir returned 0x0x7f689c009190
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xabbd0c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xab3adc30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f689c009160
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xaab8ac10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0x9c001290, filler=0xabe19bc0, offset=0, fi=0xabbd0c30)
+    readdir returned 0x0x7f689c009190
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xabbd0c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+
+bb_opendir(path="/", fi=0xab3adc30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lock_owner = 0x0000000000000000
+    opendir returned 0x0x7f689c0111a0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c0111a0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xaab8ac10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0x9c001310, filler=0xabe19bc0, offset=0, fi=0xabbd0c30)
+    readdir returned 0x0x7f689c0111d0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c0111a0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c0111a0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xabbd0c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c0111a0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c0111a0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xab3adc30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f689c009160
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xaab8ac10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0x9c001390, filler=0xabe19bc0, offset=0, fi=0xabbd0c30)
+    readdir returned 0x0x7f689c009190
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xabbd0c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xab3adc30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f689c009160
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xaab8ac10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0x9c001410, filler=0xabe19bc0, offset=0, fi=0xabbd0c30)
+    readdir returned 0x0x7f689c009190
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xabbd0c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xab3adc30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f689c009160
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xaab8ac10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0x9c001390, filler=0xabe19bc0, offset=0, fi=0xabbd0c30)
+    readdir returned 0x0x7f689c009190
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xabbd0c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xab3adc30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f689c009160
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xaab8ac10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0x9c001410, filler=0xabe19bc0, offset=0, fi=0xabbd0c30)
+    readdir returned 0x0x7f689c009190
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xabbd0c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xab3adc30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f689c009160
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xaab8ac10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0x9c001390, filler=0xabe19bc0, offset=0, fi=0xabbd0c30)
+    readdir returned 0x0x7f689c009190
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xabbd0c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+
+bb_opendir(path="/", fi=0xab3adc30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f689c0111a0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c0111a0
+    lock_owner = 0x0000000000000000
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xaab8ac10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0x9c001410, filler=0xabe19bc0, offset=0, fi=0xab3adc30)
+    readdir returned 0x0x7f689c0111d0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c0111a0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c0111a0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xab3adc40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c0111a0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c0111a0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xabbd0c30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f68a400a770
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xaab8ac10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0xa4002600, filler=0xabe19bc0, offset=0, fi=0xab3adc30)
+    readdir returned 0x0x7f68a400a7a0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xaab8ac40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xabbd0c30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f68a400a770
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xab3adc10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0xa4002680, filler=0xabe19bc0, offset=0, fi=0xaab8ac30)
+    readdir returned 0x0x7f68a400a7a0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xaab8ac40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+
+bb_opendir(path="/", fi=0xabbd0c30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f68a40127b0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a40127b0
+    lock_owner = 0x0000000000000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xab3adc10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0xa4002700, filler=0xabe19bc0, offset=0, fi=0xabbd0c30)
+    readdir returned 0x0x7f68a40127e0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a40127b0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a40127b0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xabbd0c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a40127b0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a40127b0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xabbd0c30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f68a400a770
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xab3adc10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0xa4002700, filler=0xabe19bc0, offset=0, fi=0xaab8ac30)
+    readdir returned 0x0x7f68a400a7a0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xaab8ac40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xabbd0c30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f68a400a770
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xab3adc10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0xa4002780, filler=0xabe19bc0, offset=0, fi=0xaab8ac30)
+    readdir returned 0x0x7f68a400a7a0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xaab8ac40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xabbd0c30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f68a400a770
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xab3adc10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0xa4002800, filler=0xabe19bc0, offset=0, fi=0xaab8ac30)
+    readdir returned 0x0x7f68a400a7a0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xaab8ac40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xabbd0c30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f68a400a770
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xab3adc10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0xa4002880, filler=0xabe19bc0, offset=0, fi=0xaab8ac30)
+    readdir returned 0x0x7f68a400a7a0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xaab8ac40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xaab8ac30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f68a00011b0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a00011b0
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xab3adc10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0xa0001130, filler=0xabe19bc0, offset=0, fi=0xabbd0c30)
+    readdir returned 0x0x7f68a00011e0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a00011b0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a00011b0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xabbd0c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a00011b0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a00011b0
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xabbd0c30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f68a400a770
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xab3adc10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0xa4002900, filler=0xabe19bc0, offset=0, fi=0xaab8ac30)
+    readdir returned 0x0x7f68a400a7a0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xaab8ac40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xabbd0c30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f68a400a770
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xab3adc10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0xa4002980, filler=0xabe19bc0, offset=0, fi=0xaab8ac30)
+    readdir returned 0x0x7f68a400a7a0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xaab8ac40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/", fi=0xabbd0c30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f68a400a770
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/", statbuf=0xab3adc10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_readdir(path="/", buf=0xa4002980, filler=0xabe19bc0, offset=0, fi=0xaab8ac30)
+    readdir returned 0x0x7f68a400a7a0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/", fi=0xaab8ac40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/autorun.inf", statbuf=0xabbd0c40)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/autorun.inf", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/autorun.inf"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_getattr(path="/", statbuf=0xab3adc10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_access(path="/", mask=01)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+
+bb_getattr(path="/", statbuf=0xabbd0c10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 3
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_getattr(path="/fdfds.dfsf", statbuf=0xab3adc40)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/fdfds.dfsf", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/fdfds.dfsf"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_mknod(path="/fdfds.dfsf", mode=0100664, dev=0)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/fdfds.dfsf", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/fdfds.dfsf"
+    open returned 5
+    close returned 0
+
+bb_getattr(path="/fdfds.dfsf", statbuf=0xabbd0c40)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/fdfds.dfsf", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/fdfds.dfsf"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1458294
+    st_mode = 0100664
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x60d258c1
+    st_mtime = 0x60d258c1
+    st_ctime = 0x60d258c1
+
+bb_open(path"/fdfds.dfsf", fi=0xab3adcf0)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/fdfds.dfsf", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/fdfds.dfsf"
+    open returned 5
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+
+bb_flush(path="/fdfds.dfsf", fi=0xaab8acf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x8f0a924ea3e0d2e9
+
+bb_utime(path="/fdfds.dfsf", ubuf=0xabbd0aa0)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/fdfds.dfsf", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/fdfds.dfsf"
+    utime returned 0
+
+bb_getattr(path="/fdfds.dfsf", statbuf=0xabbd0b70)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/fdfds.dfsf", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/fdfds.dfsf"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1458294
+    st_mode = 0100664
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x60d258c1
+    st_mtime = 0x60d258c1
+    st_ctime = 0x60d258c1
+
+bb_flush(path="/fdfds.dfsf", fi=0xab3adcf0)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x8f0a924ea3e0d2e9
+
+bb_release(path="/fdfds.dfsf", fi=0xaab8acf0)
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000005
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000005
+    lock_owner = 0x0000000000000000
+    close returned 0
+
+bb_getattr(path="/dffds", statbuf=0xabbd0c40)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/dffds", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/dffds"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+bb_mkdir(path="/dffds", mode=0775)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/dffds", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/dffds"
+    mkdir returned 0
+
+bb_getattr(path="/dffds", statbuf=0xab3adc40)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/dffds", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/dffds"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1458395
+    st_mode = 040775
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d258c6
+    st_mtime = 0x60d258c6
+    st_ctime = 0x60d258c6
+
+bb_getattr(path="/", statbuf=0xaab8ac10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 4
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d258c6
+    st_ctime = 0x60d258c6
+
+bb_getattr(path="/", statbuf=0xabbd0c10)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457667
+    st_mode = 040775
+    st_nlink = 4
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d258c6
+    st_ctime = 0x60d258c6
+
+bb_getxattr(path = "/", name = "security.selinux", value = 0x9c000c30, size = 255)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "system.posix_acl_access", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/", name = "system.posix_acl_default", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_opendir(path="/", fi=0xab3adc30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/"
+    opendir returned 0x0x7f689c009160
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_readdir(path="/", buf=0x9c001390, filler=0xabe19bc0, offset=0, fi=0xaab8ac30)
+    readdir returned 0x0x7f689c009190
+calling filler with name fdfds.dfsf
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+calling filler with name dffds
+calling filler with name test
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_getattr(path="/fdfds.dfsf", statbuf=0xabbd0c40)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/fdfds.dfsf", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/fdfds.dfsf"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1458294
+    st_mode = 0100664
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 4096
+    st_blocks = 0
+    st_atime = 0x60d258c1
+    st_mtime = 0x60d258c1
+    st_ctime = 0x60d258c1
+
+bb_getxattr(path = "/fdfds.dfsf", name = "security.selinux", value = 0x9c000c30, size = 255)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/fdfds.dfsf", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/fdfds.dfsf"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/fdfds.dfsf", name = "system.posix_acl_access", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/fdfds.dfsf", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/fdfds.dfsf"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getattr(path="/bogus.txt", statbuf=0xabbd0c40)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/bogus.txt", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1457678
+    st_mode = 0100664
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d25397
+    st_mtime = 0x60d09eeb
+    st_ctime = 0x60d09eeb
+
+bb_getxattr(path = "/bogus.txt", name = "security.selinux", value = 0x9c000c30, size = 255)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/bogus.txt", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/bogus.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/bogus.txt", name = "system.posix_acl_access", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/bogus.txt", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/bogus.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getattr(path="/dffds", statbuf=0xabbd0c40)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/dffds", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/dffds"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1458395
+    st_mode = 040775
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d258c6
+    st_mtime = 0x60d258c6
+    st_ctime = 0x60d258c6
+
+bb_getxattr(path = "/dffds", name = "security.selinux", value = 0x9c000c30, size = 255)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/dffds", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/dffds"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/dffds", name = "system.posix_acl_access", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/dffds", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/dffds"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/dffds", name = "system.posix_acl_default", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/dffds", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/dffds"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getattr(path="/test", statbuf=0xab3adc40)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/test", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/test"
+    lstat returned 0
+    si:
+    st_dev = 2049
+    st_ino = 1458284
+    st_mode = 040775
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x60d253fd
+    st_mtime = 0x60d253f8
+    st_ctime = 0x60d253f8
+
+bb_getxattr(path = "/test", name = "security.selinux", value = 0xa0000c30, size = 255)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/test", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/test"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/test", name = "system.posix_acl_access", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/test", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/test"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_getxattr(path = "/test", name = "system.posix_acl_default", value = 0x00000000, size = 0)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/test", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/test"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+bb_releasedir(path="/", fi=0xabbd0c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f689c009160
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f689c009160
+    lock_owner = 0x0000000000000000
+
+bb_opendir(path="/dffds", fi=0xabbd0c30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/dffds", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/dffds"
+    opendir returned 0x0x7f68a400a770
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_readdir(path="/dffds", buf=0xa4002980, filler=0xabe19bc0, offset=0, fi=0xaab8ac30)
+    readdir returned 0x0x7f68a400a7a0
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/dffds", fi=0xabbd0c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a400a770
+    writepage = 0
+
+bb_opendir(path="/test", fi=0xaab8ac30)
+    bb_fullpath:  rootdir = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir", path = "/test", fpath = "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example2_bbfs/example/rootdir/test"
+    opendir returned 0x0x7f68a00016d0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a00016d0
+    lock_owner = 0x0000000000000000
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a400a770
+    lock_owner = 0x0000000000000000
+
+bb_readdir(path="/test", buf=0xa0001130, filler=0xabe19bc0, offset=0, fi=0xab3adc30)
+    readdir returned 0x0x7f68a0001700
+calling filler with name .
+calling filler with name ..
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a00016d0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a00016d0
+    lock_owner = 0x0000000000000000
+
+bb_releasedir(path="/test", fi=0xabbd0c40)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7f68a00016d0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007f68a00016d0
+    lock_owner = 0x0000000000000000
+
+bb_destroy(userdata=0x7f1582a0)

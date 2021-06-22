@@ -14,6 +14,7 @@
 /example2_bbfs/src/log.o
 /example2_bbfs/src/Makefile
 /example2_bbfs/src/stamp-h1
+/example2_bbfs/src/.deps/*
 /example2_bbfs/example/rootdir/*
 /example2_bbfs/example/mountdir/*
 

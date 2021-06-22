@@ -7,6 +7,9 @@ int main(int argc, char* argv[]) {
 	if(fp == NULL) {
 		printf("Datei konnte nicht geöffnet werden!");
 	} else {
+		int c;
+		while((c = getc(fp)) != EOF)
+			putchar(c);
 		fclose(fp);
 	}
 	

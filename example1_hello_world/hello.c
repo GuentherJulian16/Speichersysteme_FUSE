@@ -6,19 +6,20 @@
 #include <errno.h>
 #include <fcntl.h>
 
-static const char *hello_str = "Hello World!\n";
+static const char *hello_str = "HelloWorld\n";
 static const char *hello_path = "/hello";
+static int counter = 1;
 
 static void *hello_init(struct fuse_conn_info *conn,
 		      struct fuse_config *cfg)
 {
-	printf("DEBUG: hello from init\n");
+	printf("%.3d: DEBUG: hello from init\n", counter++);
 	return NULL;
 }
 
 static int hello_access(const char *path, int mask)
 {
-	printf("DEBUG: hello from access\n");
+	printf("%.3d: DEBUG: hello from access, path=%s\n", counter++, path);
 	int res;
 
 	res = access(path, mask);
@@ -30,7 +31,7 @@ static int hello_access(const char *path, int mask)
 
 static int hello_readlink(const char *path, char *buf, size_t size)
 {
-	printf("DEBUG: hello from readlink \n");
+	printf("%.3d: DEBUG: hello from readlink, path=%s\n", counter++, path);
 	int res;
 
 	res = readlink(path, buf, size - 1);
@@ -41,21 +42,9 @@ static int hello_readlink(const char *path, char *buf, size_t size)
 	return 0;
 }
 
-static int hello_mknod(const char *path, mode_t mode, dev_t rdev)
-{
-	printf("DEBUG: hello from mknod \n");
-	int res;
-
-	//res = mknod_wrapper(AT_FDCWD, path, NULL, mode, rdev);
-	if (res == -1)
-		return -errno;
-
-	return 0;
-}
-
 static int hello_mkdir(const char *path, mode_t mode)
 {
-	printf("DEBUG: hello from mkdir \n");
+	printf("%.3d: DEBUG: hello from mkdir, path=%s\n", counter++, path);
 	int res;
 
 	res = mkdir(path, mode);
@@ -67,7 +56,7 @@ static int hello_mkdir(const char *path, mode_t mode)
 
 static int hello_unlink(const char *path)
 {
-	printf("DEBUG: hello from unlink \n");
+	printf("%.3d: DEBUG: hello from unlink, path=%s\n", counter++, path);
 	int res;
 
 	res = unlink(path);
@@ -79,7 +68,7 @@ static int hello_unlink(const char *path)
 
 static int hello_rmdir(const char *path)
 {
-	printf("DEBUG: hello from rmdir \n");
+	printf("%.3d: DEBUG: hello from rmdir, path=%s\n", counter++, path);
 	int res;
 
 	res = rmdir(path);
@@ -89,21 +78,9 @@ static int hello_rmdir(const char *path)
 	return 0;
 }
 
-static int hello_symlink(const char *from, const char *to)
-{
-	printf("DEBUG: hello from symlink \n");
-	int res;
-
-	res = symlink(from, to);
-	if (res == -1)
-		return -errno;
-
-	return 0;
-}
-
 static int hello_rename(const char *from, const char *to, unsigned int flags)
 {
-	printf("DEBUG: hello from rename \n");
+	printf("%.3d: DEBUG: hello from rename, from=%s,to=%s\n", counter++, from, to);
 	int res;
 
 	if (flags)
@@ -116,66 +93,10 @@ static int hello_rename(const char *from, const char *to, unsigned int flags)
 	return 0;
 }
 
-static int hello_link(const char *from, const char *to)
-{
-	printf("DEBUG: hello from link \n");
-	int res;
-
-	res = link(from, to);
-	if (res == -1)
-		return -errno;
-
-	return 0;
-}
-
-static int hello_chmod(const char *path, mode_t mode,
-		     struct fuse_file_info *fi)
-{
-	printf("DEBUG: hello from chmod \n");
-	(void) fi;
-	int res;
-
-	res = chmod(path, mode);
-	if (res == -1)
-		return -errno;
-
-	return 0;
-}
-
-static int hello_chown(const char *path, uid_t uid, gid_t gid,
-		     struct fuse_file_info *fi)
-{
-	printf("DEBUG: hello from chown \n");
-	(void) fi;
-	int res;
-
-	res = lchown(path, uid, gid);
-	if (res == -1)
-		return -errno;
-
-	return 0;
-}
-
-static int hello_truncate(const char *path, off_t size,
-			struct fuse_file_info *fi)
-{
-	printf("DEBUG: hello from truncate \n");
-	int res;
-
-	if (fi != NULL)
-		res = ftruncate(fi->fh, size);
-	else
-		res = truncate(path, size);
-	if (res == -1)
-		return -errno;
-
-	return 0;
-}
-
 static int hello_create(const char *path, mode_t mode,
 		      struct fuse_file_info *fi)
 {
-	printf("DEBUG: hello from create \n");
+	printf("%.3d: DEBUG: hello from create, path=%s\n", counter++, path);
 	int res;
 
 	res = open(path, fi->flags, mode);
@@ -189,7 +110,7 @@ static int hello_create(const char *path, mode_t mode,
 static int hello_write(const char *path, const char *buf, size_t size,
 		     off_t offset, struct fuse_file_info *fi)
 {
-	printf("DEBUG: hello from write \n");
+	printf("%.3d: DEBUG: hello from write, path=%s\n", counter++, path);
 	int fd;
 	int res;
 
@@ -213,7 +134,7 @@ static int hello_write(const char *path, const char *buf, size_t size,
 
 static int hello_statfs(const char *path, struct statvfs *stbuf)
 {
-	printf("DEBUG: hello from statfs \n");
+	printf("%.3d: DEBUG: hello from statfs, path=%s\n", counter++, path);
 	int res;
 
 	res = statvfs(path, stbuf);
@@ -225,7 +146,7 @@ static int hello_statfs(const char *path, struct statvfs *stbuf)
 
 static int hello_getattr(const char *path, struct stat *stbuf)
 {
-	printf("DEBUG: hello from getattr \n");
+	printf("%.3d: DEBUG: hello from getattr, path=%s\n", counter++, path);
 	int res = 0;
 
 	memset(stbuf, 0, sizeof(struct stat));
@@ -245,7 +166,7 @@ static int hello_getattr(const char *path, struct stat *stbuf)
 static int hello_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
 			 off_t offset, struct fuse_file_info *fi)
 {
-	printf("DEBUG: hello from readdir \n");
+	printf("%.3d: DEBUG: hello from readdir, path=%s\n", counter++, path);
 	(void) offset;
 	(void) fi;
 
@@ -261,7 +182,7 @@ static int hello_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
 
 static int hello_open(const char *path, struct fuse_file_info *fi)
 {
-	printf("DEBUG: hello from open \n");
+	printf("%.3d: DEBUG: hello from open, path=%s\n", counter++, path);
 	if (strcmp(path, hello_path) != 0)
 		return -ENOENT;
 
@@ -274,7 +195,7 @@ static int hello_open(const char *path, struct fuse_file_info *fi)
 static int hello_read(const char *path, char *buf, size_t size, off_t offset,
 		      struct fuse_file_info *fi)
 {
-	printf("DEBUG: hello from read \n");
+	printf("%.3d: DEBUG: hello from read, path=%s\n", counter++, path);
 	size_t len;
 	(void) fi;
 	if(strcmp(path, hello_path) != 0)
@@ -294,26 +215,18 @@ static int hello_read(const char *path, char *buf, size_t size, off_t offset,
 static struct fuse_operations hello_oper = {
 	.init       = hello_init,
 	.access     = hello_access,
-	.chmod      = hello_chmod,
-	.chown      = hello_chown,
 	.create     = hello_create,
 	.getattr	= hello_getattr,
-	.link       = hello_link,
 	.mkdir      = hello_mkdir,
-	.mknod      = hello_mknod,
 	.readdir	= hello_readdir,
 	.readlink   = hello_readlink,
 	.rename     = hello_rename,
 	.rmdir      = hello_rmdir,
 	.open		= hello_open,
 	.statfs     = hello_statfs,
-	.symlink    = hello_symlink,
-	.truncate   = hello_truncate,
-	.unlink     = hello_unlink,
 	.write      = hello_write,
 	.read		= hello_read,
-	
-	
+	.unlink		= hello_unlink
 };
 
 int main(int argc, char *argv[])

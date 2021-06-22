@@ -1,17 +1,5 @@
-# Beispiel 2 - Big Brother File System
+# Beispiel 6 - google-drive-ocamlfuse
+google-drive-ocamlfuse ist ein FUSE Dateisytem, mit dem du dir Google Drive Accounts in dein Dateisystem einbinden kannst. Das Dateisystem ist in OCaml programmiert.
 
-Beispiel 2 zeigt die Implementierung des 'Big Brother File System' (eine Anspielung an 'Big Brother is watching'). Der Code ist von Joseph J. Pfeiffer von der New Mexico State University. Das entsprechende Tutorial dazu gibt es auf https://www.cs.nmsu.edu/~pfeiffer/fuse-tutorial/.
-Das Dateisystem nimmt die Request einfach entgegen und gibt sie an ein darunterliegendes Verzeichnis weiter. Zusätzlich werden die Operationen in einer Datei geloggt.
-
-Zum Ausführen navigiere in das Verzeichnis `example2-bbfs` und führe folgende Kommandos aus:
-```
-./configure
-make
-```
-
-Wechsel in den Ordner `example` und führe folgendes Kommando aus, um das Dateisystem zu starten:
-```
-../src/bbfs rootdir mountdir
-```
-
-Das Dateisystem wird in das Verzeichnis `mountdir` gemountet. In diesem Verzeichnis kannst du jetzt ganz normal Dateiopertationen ausführen, wie zum Beispiel Dateien oder Verzeichnisse erstellen. Jedes mal wenn eine Dateioperation in `mountdir` ausgeführt wird, dann wird die Operation in einer Datei des aktuellen Verzeichnisses geloggt.
+Auch für dieses Beispiel haben wir dir eine Skriptdatei vorbereitet. Öffne ein Terminal, navigiere in das Verzeichnis `example6_googledrive` und starte diese: `bash googledrive-ocaml-fuse.sh`
+Das Skript muss zweimal ausgeführt werden. Bei der ersten Ausführung wird das Kommando `google-drive-ocamlfuse` ausgeführt, welches bei der ersten Ausführung den Browser öffnet. Dort musst du deine Gmail-Daten angeben und eine Berechtigung eintragen. Bei der zweiten Ausführung wird das Dateisystem dann in `/tmp/googledrive` gemountet. Du kannst dann auf deine Google Drive Dateien zugreifen, wie auf lokale Dateien auch.

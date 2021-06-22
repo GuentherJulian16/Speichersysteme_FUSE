@@ -1,17 +1,5 @@
-# Beispiel 2 - Big Brother File System
+# Beispiel 5 - SSHFS
+SSHFS ist ein Userspace Dateisystem, mit dem du dir entfernte Rechner in dein eigenes Dateisystem einbinden kannst. Das Dateisystem benutzt das SSH File Transfer Protocol um das Remote Dateisystem zu mounten. Der Vorteil bei der Verwendung von SSHFS ist, dass man die Remote Dateien komfortabel bearbeiten kann, so als ob sie auf der lokalen Festplatte liegen würden.
 
-Beispiel 2 zeigt die Implementierung des 'Big Brother File System' (eine Anspielung an 'Big Brother is watching'). Der Code ist von Joseph J. Pfeiffer von der New Mexico State University. Das entsprechende Tutorial dazu gibt es auf https://www.cs.nmsu.edu/~pfeiffer/fuse-tutorial/.
-Das Dateisystem nimmt die Request einfach entgegen und gibt sie an ein darunterliegendes Verzeichnis weiter. Zusätzlich werden die Operationen in einer Datei geloggt.
-
-Zum Ausführen navigiere in das Verzeichnis `example2-bbfs` und führe folgende Kommandos aus:
-```
-./configure
-make
-```
-
-Wechsel in den Ordner `example` und führe folgendes Kommando aus, um das Dateisystem zu starten:
-```
-../src/bbfs rootdir mountdir
-```
-
-Das Dateisystem wird in das Verzeichnis `mountdir` gemountet. In diesem Verzeichnis kannst du jetzt ganz normal Dateiopertationen ausführen, wie zum Beispiel Dateien oder Verzeichnisse erstellen. Jedes mal wenn eine Dateioperation in `mountdir` ausgeführt wird, dann wird die Operation in einer Datei des aktuellen Verzeichnisses geloggt.
+Wir haben die eine Datei vorbereitet, mit der du SSHFS ganz einfach selbst ausprobieren kannst. Öffne dafür ein Terminal, navigiere in das Verzeichnis `example5_sshfs` und starte das Skript File: `bash sshfs.sh`.
+Das Skript installiert die benötigten SSHFS Packages, erstellt das Verzeichnis `/tmp/sshfs` und fragt dich anschließend nach dem Benutzer- und Rechnernamen für die SSH-Verbindung. Danach wird das Dateisystem in `/tmp/sshfs` gemountet.
