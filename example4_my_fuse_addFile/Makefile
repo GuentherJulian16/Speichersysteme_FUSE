@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/exercise3_my_fuse
+CMAKE_SOURCE_DIR = /home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example4_my_fuse_addFile
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/exercise3_my_fuse
+CMAKE_BINARY_DIR = /home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example4_my_fuse_addFile
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/exercise3_my_fuse/CMakeFiles /home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/exercise3_my_fuse/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example4_my_fuse_addFile/CMakeFiles /home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example4_my_fuse_addFile/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/exercise3_my_fuse/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example4_my_fuse_addFile/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named my_fuse
+# Target rules for targets named my_fuse_addFile
 
 # Build rule for target.
-my_fuse: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 my_fuse
-.PHONY : my_fuse
+my_fuse_addFile: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_fuse_addFile
+.PHONY : my_fuse_addFile
 
 # fast build rule for target.
-my_fuse/fast:
-	$(MAKE) -f CMakeFiles/my_fuse.dir/build.make CMakeFiles/my_fuse.dir/build
-.PHONY : my_fuse/fast
+my_fuse_addFile/fast:
+	$(MAKE) -f CMakeFiles/my_fuse_addFile.dir/build.make CMakeFiles/my_fuse_addFile.dir/build
+.PHONY : my_fuse_addFile/fast
 
-my_fuse.o: my_fuse.c.o
+my_fuse_addFile.o: my_fuse_addFile.c.o
 
-.PHONY : my_fuse.o
+.PHONY : my_fuse_addFile.o
 
 # target to build an object file
-my_fuse.c.o:
-	$(MAKE) -f CMakeFiles/my_fuse.dir/build.make CMakeFiles/my_fuse.dir/my_fuse.c.o
-.PHONY : my_fuse.c.o
+my_fuse_addFile.c.o:
+	$(MAKE) -f CMakeFiles/my_fuse_addFile.dir/build.make CMakeFiles/my_fuse_addFile.dir/my_fuse_addFile.c.o
+.PHONY : my_fuse_addFile.c.o
 
-my_fuse.i: my_fuse.c.i
+my_fuse_addFile.i: my_fuse_addFile.c.i
 
-.PHONY : my_fuse.i
+.PHONY : my_fuse_addFile.i
 
 # target to preprocess a source file
-my_fuse.c.i:
-	$(MAKE) -f CMakeFiles/my_fuse.dir/build.make CMakeFiles/my_fuse.dir/my_fuse.c.i
-.PHONY : my_fuse.c.i
+my_fuse_addFile.c.i:
+	$(MAKE) -f CMakeFiles/my_fuse_addFile.dir/build.make CMakeFiles/my_fuse_addFile.dir/my_fuse_addFile.c.i
+.PHONY : my_fuse_addFile.c.i
 
-my_fuse.s: my_fuse.c.s
+my_fuse_addFile.s: my_fuse_addFile.c.s
 
-.PHONY : my_fuse.s
+.PHONY : my_fuse_addFile.s
 
 # target to generate assembly for a file
-my_fuse.c.s:
-	$(MAKE) -f CMakeFiles/my_fuse.dir/build.make CMakeFiles/my_fuse.dir/my_fuse.c.s
-.PHONY : my_fuse.c.s
+my_fuse_addFile.c.s:
+	$(MAKE) -f CMakeFiles/my_fuse_addFile.dir/build.make CMakeFiles/my_fuse_addFile.dir/my_fuse_addFile.c.s
+.PHONY : my_fuse_addFile.c.s
 
 # Help Target
 help:
@@ -156,12 +156,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... my_fuse"
-	@echo "... my_fuse.o"
-	@echo "... my_fuse.i"
-	@echo "... my_fuse.s"
+	@echo "... edit_cache"
+	@echo "... my_fuse_addFile"
+	@echo "... my_fuse_addFile.o"
+	@echo "... my_fuse_addFile.i"
+	@echo "... my_fuse_addFile.s"
 .PHONY : help
 
 

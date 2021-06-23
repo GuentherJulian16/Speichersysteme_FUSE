@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/exercise3_my_fuse/my_fuse.c
+/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example4_my_fuse_addFile/my_fuse_addFile.c
 fuse.h
 -
 stdio.h
@@ -20,5 +20,7 @@ time.h
 string.h
 -
 stdlib.h
+-
+errno.h
 -
 

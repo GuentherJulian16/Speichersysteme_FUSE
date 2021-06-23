@@ -44,5 +44,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/my_fuse.dir/DependInfo.cmake"
+  "CMakeFiles/my_fuse_addFile.dir/DependInfo.cmake"
   )

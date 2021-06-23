@@ -12,7 +12,7 @@ static int counter = 1;
 
 static int do_getattr( const char *path, struct stat *st )
 {
-	printf("%.3d: DEBUG: hello from getattr, path=%s\n", counter++, path);
+	printf("%.3d: DEBUG: do_getattr called, path=%s\n", counter++, path);
 	
 	if ( strcmp( path, "/" ) == 0 )		//wird ausgeführt wenn der Pfad das root Verzeichnis ist
 	{
@@ -29,7 +29,7 @@ static int do_getattr( const char *path, struct stat *st )
 
 static int do_readdir( const char *path, void *buffer, fuse_fill_dir_t filler, off_t offset, struct fuse_file_info *fi )
 {
-	printf("%.3d: DEBUG: readdir called, path=%s\n", counter++, path);
+	printf("%.3d: DEBUG: do_readdir called, path=%s\n", counter++, path);
 	
 	filler( buffer, ".", NULL, 0 );  // Aktuelles Verzeichnis
 	filler( buffer, "..", NULL, 0 ); // Elternverzeichnis
@@ -45,7 +45,7 @@ static int do_readdir( const char *path, void *buffer, fuse_fill_dir_t filler, o
 
 static int do_read( const char *path, char *buffer, size_t size, off_t offset, struct fuse_file_info *fi )
 {
-	printf("%.3d: DEBUG: read called, path=%s\n", counter++, path);
+	printf("%.3d: DEBUG: do_read called, path=%s\n", counter++, path);
 	
 	char* txtFileContent = "Hallo Welt!";
 	char* text = NULL;

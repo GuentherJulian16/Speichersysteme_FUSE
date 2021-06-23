@@ -12,7 +12,7 @@ static int counter = 1;
 
 static int do_getattr( const char *path, struct stat *st )
 {
-	printf("%.3d: DEBUG: hello from getattr, path=%s\n", counter++, path);
+	printf("%.3d: DEBUG: do_getattr called, path=%s\n", counter++, path);
 	
 	if ( strcmp( path, "/" ) == 0 )		//wird ausgeführt wenn der Pfad das root Verzeichnis ist
 	{

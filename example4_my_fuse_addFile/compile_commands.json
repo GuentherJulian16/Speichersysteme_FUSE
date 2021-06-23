@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example4_my_fuse_addFile",
+  "command": "/usr/bin/cc    -D_FILE_OFFSET_BITS=64   -o CMakeFiles/my_fuse_addFile.dir/my_fuse_addFile.c.o   -c /home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example4_my_fuse_addFile/my_fuse_addFile.c",
+  "file": "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example4_my_fuse_addFile/my_fuse_addFile.c"
+}
+]

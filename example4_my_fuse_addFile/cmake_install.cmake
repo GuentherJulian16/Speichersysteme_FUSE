@@ -1,4 +1,4 @@
-# Install script for directory: /home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/exercise3_my_fuse
+# Install script for directory: /home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example4_my_fuse_addFile
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/exercise3_my_fuse/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/example4_my_fuse_addFile/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

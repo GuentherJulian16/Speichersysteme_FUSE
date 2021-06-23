@@ -1,3 +1,0 @@
-/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/exercise3_my_fuse/CMakeFiles/edit_cache.dir
-/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/exercise3_my_fuse/CMakeFiles/rebuild_cache.dir
-/home/jgunther/Schreibtisch/Studium/Speichersysteme/Speichersysteme_FUSE/exercise3_my_fuse/CMakeFiles/my_fuse.dir
