@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
-project(my_fuse VERSION 0.0.1 LANGUAGES C)
+project(my_fuse_read VERSION 0.0.1 LANGUAGES C)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -D_FILE_OFFSET_BITS=64")
 set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -Wall --pedantic -g")
@@ -12,6 +12,6 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 find_package(FUSE REQUIRED)
 
 include_directories(${FUSE_INCLUDE_DIR})
-add_executable(my_fuse my_fuse.c)
-target_link_libraries(my_fuse ${FUSE_LIBRARIES})
+add_executable(my_fuse_read my_fuse_read.c)
+target_link_libraries(my_fuse_read ${FUSE_LIBRARIES})
 
