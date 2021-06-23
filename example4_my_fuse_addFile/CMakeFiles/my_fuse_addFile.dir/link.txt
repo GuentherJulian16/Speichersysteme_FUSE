@@ -1,1 +1,0 @@
-/usr/bin/cc  -D_FILE_OFFSET_BITS=64  -rdynamic CMakeFiles/my_fuse_addFile.dir/my_fuse_addFile.c.o  -o bin/my_fuse_addFile  -lfuse 

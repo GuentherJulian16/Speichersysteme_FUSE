@@ -18,9 +18,16 @@
 /example2_bbfs/example/rootdir/*
 /example2_bbfs/example/mountdir/*
 
-/example3_my_fuse/bin/*
-/example3_my_fuse/CMakeFiles/*
-/example3_my_fuse/CMakeCache.txt
-/example3_my_fuse/cmake_install.cmake
-/example3_my_fuse/compile_commands.json
-/example3_my_fuse/Makefile
+/example3_my_fuse_read/bin/*
+/example3_my_fuse_read/CMakeFiles/*
+/example3_my_fuse_read/CMakeCache.txt
+/example3_my_fuse_read/cmake_install.cmake
+/example3_my_fuse_read/compile_commands.json
+/example3_my_fuse_read/Makefile
+
+/example3_my_fuse_write/bin/*
+/example3_my_fuse_write/CMakeFiles/*
+/example3_my_fuse_write/CMakeCache.txt
+/example3_my_fuse_write/cmake_install.cmake
+/example3_my_fuse_write/compile_commands.json
+/example3_my_fuse_write/Makefile
