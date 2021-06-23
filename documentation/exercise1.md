@@ -8,7 +8,7 @@ mkdir /tmp/hello
 ```
 Um das Dateisystem zu erstellen. führe die folgenden Kommandos in dem Terminal aus.
 ```
-cd example_hello_world
+cd example1_hello_world
 cmake .
 make
 ```
@@ -18,7 +18,7 @@ Im Ordner `bin` wird die Datei `hello` erstellt. Diese repräsentiert das FUSE D
 ./bin/hello /tmp/hello -f
 ```
 Das Dateisystem wird nun im Verzeichnis `/tmp/hello` gemountet. Die Option -f sorgt dafür, dass Debug Messages ausgegeben werden. Das Terminal ist daher blockiert.
-Führt das Kommando `mount` aus. In der Ausgabe solltet ihr sehen, dass `hello` in `/tmp/hello` gemountet ist.
+Führt das Kommando `mount` in einem neuen Terminal aus. In der Ausgabe solltet ihr sehen, dass `hello` in `/tmp/hello` gemountet ist.
 
 ## Aufgaben
 1. Öffne nun ein neues Terminal und navigiere wieder in den Ordner `example1_hello_world`. Führe das Programm `./openFile` aus. Dieses öffnet eine Datei in dem Verzeichnis `/tmp/hello`, und gibt deren Inhalt aus. In dem anderen Terminal sollten nur Debug Messages zu sehen sein. Navigiere in dem Terminal in das Verzeichnis `/tmp/hello` und führe dort ein paar Dateioperationen aus (ls, mkdir, touch, cp, mv, ...). Die Operationen werden nicht funktionieren, da sie nicht implementiert sind, aber in dem anderen Terminal sollten bei jedem Kommando Debug Messages ausgegeben werden.
