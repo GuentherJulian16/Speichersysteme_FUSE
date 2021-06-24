@@ -1,6 +1,6 @@
 # Beispiel 1 - Hello World
 
-Das erste Beispiel soll euch eine erste Einführung in FUSE Dateisysteme geben und deren Funktionsweise geben. Öffnet ein Terminal und navigiert in den Ordner `example1_hello_world`. Das FUSE Dateisystem befindet sich in der Datei `hello.c`. Der Code der Datei interessiert uns an diesem Punkt noch nicht. Dazu kommen wir später noch.
+Das erste Beispiel soll euch eine erste Einführung in FUSE Dateisysteme und deren Funktionsweise geben. Öffnet ein Terminal und navigiert in den Ordner `example1_hello_world`. Das FUSE Dateisystem befindet sich in der Datei `hello.c`. Der Code der Datei interessiert uns an diesem Punkt noch nicht. Dazu kommen wir später.
 
 Erstellt zunächst ein neues Verzeichnis, in welches das Dateisystem später gemountet wird.
 ```
@@ -8,7 +8,6 @@ mkdir /tmp/hello
 ```
 Um das Dateisystem zu erstellen. führe die folgenden Kommandos in dem Terminal aus.
 ```
-cd example1_hello_world
 cmake .
 make
 ```

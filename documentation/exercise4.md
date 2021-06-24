@@ -11,7 +11,7 @@ int currentIndex = 0;
 char dirs[256][256];
 int currentIndexDirs = 0;
 ```
-Beim Erstellen eines neues Verzeichnisses wird die Funktion `do_mkdir` aufgerufen, welche nichts anderes macht als dem übergebenen Pfad in dem Array zu speichern.
+Beim Erstellen eines neuen Verzeichnisses wird die Funktion `do_mkdir` aufgerufen, welche nichts anderes macht als dem übergebenen Pfad in dem Array zu speichern.
 ```
 static int do_mkdir(const char *path, mode_t mode) {
 	printf("%.3d: DEBUG: do_mkdir called, path=%s\n", counter++, path);

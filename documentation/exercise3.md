@@ -1,8 +1,8 @@
 # Beispiel 3 - Mein FUSE Dateisystem Part 1
 
-In diesem Beispiel werdet ihr zum ersten Mal selbst ein wenig programmieren. Die Aufgabe orientiert sich an diesem Blog Artikel: http://www.maastaar.net/fuse/linux/filesystem/c/2016/05/21/writing-a-simple-filesystem-using-fuse/
+In diesem Beispiel werdet ihr zum ersten Mal selbst ein wenig programmieren. Die Aufgabe orientiert sich an diesem Blog-Artikel: http://www.maastaar.net/fuse/linux/filesystem/c/2016/05/21/writing-a-simple-filesystem-using-fuse/
 
-Das Dateisystem wird ein Read-Only Dateisystem. Es wird zwei Dateien enthalten die der Benutzer öffnen und dessen Inhalt lesen kann. Ihr werdet das Dateisystem Schritt für Schritt implementieren. Eine Lösung findet ihr in dem Ordner `solution`.
+Das Dateisystem wird ein Read-Only Dateisystem. Es wird zwei Dateien enthalten, die der Benutzer öffnen und dessen Inhalt lesen kann. Ihr werdet das Dateisystem Schritt für Schritt implementieren. Eine Lösung findet ihr in dem Ordner `solution`.
 
 ### Aufgaben
 1. Öffnet zunächst das Verzeichnis `example3_my_fuse_read` und öffnet dort die Datei `my_fuse_read.c` in einem Editor. Die Funktion 'do_getattr' ist bereits implementiert. Die anderen beiden Funktionen, die wir benötigen sind `do_read` und `do_readdir`. Erzeugt die beiden Funktionen und fügt alle drei Funktionen der `operations` Struktur hinzu.
