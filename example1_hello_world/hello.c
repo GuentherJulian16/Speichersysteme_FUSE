@@ -6,7 +6,7 @@
 #include <errno.h>
 #include <fcntl.h>
 
-static const char *hello_str = "HelloWorld\n";
+static const char *hello_str = "HeyHo\n";
 static const char *hello_path = "/hello";
 static int counter = 1;
 
@@ -119,37 +119,30 @@ static int hello_read(const char *path, char *buf, size_t size, off_t offset,
 		      struct fuse_file_info *fi)
 {
 	printf("%.3d: DEBUG: hello from read, path=%s\n", counter++, path);
-	size_t len;
-	(void) fi;
-	if(strcmp(path, hello_path) != 0)
-		return -ENOENT;
-
-	len = sizeof hello_str - 1;
-	if (offset < len) {
-		if (offset + size > len)
-			size = len - offset;
+	char *text = NULL;
+	if(strcmp(path, hello_path) == 0) {
 		memcpy(buf, hello_str + offset, size);
-	} else
-		size = 0;
-
-	return size;
+		return strlen(hello_str) - offset;
+	} else {
+		return -1;
+	}
 }
 
 static struct fuse_operations hello_oper = {
 	.init       = hello_init,
 	.access     = hello_access,
 	.create     = hello_create,
-	.getattr	= hello_getattr,
+	.getattr    = hello_getattr,
 	.mkdir      = hello_mkdir,
-	.readdir	= hello_readdir,
+	.readdir    = hello_readdir,
 	.readlink   = hello_readlink,
 	.rename     = hello_rename,
 	.rmdir      = hello_rmdir,
-	.open		= hello_open,
+	.open       = hello_open,
 	.statfs     = hello_statfs,
 	.write      = hello_write,
-	.read		= hello_read,
-	.unlink		= hello_unlink
+	.read       = hello_read,
+	.unlink     = hello_unlink
 };
 
 int main(int argc, char *argv[])
