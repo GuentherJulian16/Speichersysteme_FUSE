@@ -125,34 +125,12 @@ static int do_mkdir(const char *path, mode_t mode) {
     return 0;
 }
 
-static int do_mknod(const char *path, mode_t mode, dev_t rdev) {
-    printf("%.3d: DEBUG: do_mknod called, path=%s\n", counter++, path);
-    
-    path++;
-    strcpy(files[currentIndex], path);
-    strcpy(content[currentIndex++], "");
-    return 0;
-}
-
-static int do_write(const char *path, const char *buffer, size_t size, off_t offset, struct fuse_file_info *info) {
-	printf("%.3d: DEBUG: do_write called, path=%s\n", counter++, path);
-    
-    int index = get_file_index(path);
-    if(index == -1) {
-        return -1;
-    }
-    strcpy(content[index], buffer);
-	return size;
-}
-
 static struct fuse_operations operations = {
     .init       = do_init,
     .getattr	= do_getattr,
     .readdir	= do_readdir,
     .read		= do_read,
     .mkdir      = do_mkdir,
-    .mknod      = do_mknod,
-    .write		= do_write
 };
 
 int main( int argc, char *argv[] )

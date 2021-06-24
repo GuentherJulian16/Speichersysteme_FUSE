@@ -13,7 +13,7 @@ cmake .
 make
 ```
 
-Im Ordner `bin` wird die Datei `hello` erstellt. Diese repräsentiert das FUSE Dateisystem. Führe sie mit dem folgenden Kommando aus:
+Im Ordner `bin` wird die Datei `hello` erstellt. Diese repräsentiert das FUSE Dateisystem. Führt sie mit dem folgenden Kommando aus:
 ```
 ./bin/hello /tmp/hello -f
 ```
@@ -21,9 +21,9 @@ Das Dateisystem wird nun im Verzeichnis `/tmp/hello` gemountet. Die Option -f so
 Führt das Kommando `mount` in einem neuen Terminal aus. In der Ausgabe solltet ihr sehen, dass `hello` in `/tmp/hello` gemountet ist.
 
 ## Aufgaben
-1. Öffne nun ein neues Terminal und navigiere wieder in den Ordner `example1_hello_world`. Führe das Programm `./openFile` aus. Dieses öffnet eine Datei in dem Verzeichnis `/tmp/hello`, und gibt deren Inhalt aus. In dem anderen Terminal sollten nur Debug Messages zu sehen sein. Navigiere in dem Terminal in das Verzeichnis `/tmp/hello` und führe dort ein paar Dateioperationen aus (ls, mkdir, touch, cp, mv, ...). Die Operationen werden nicht funktionieren, da sie nicht implementiert sind, aber in dem anderen Terminal sollten bei jedem Kommando Debug Messages ausgegeben werden.
+1. Öffnet nun ein neues Terminal und navigiert wieder in den Ordner `example1_hello_world`. Führt das Programm `./openFile` aus. Dieses öffnet eine Datei in dem Verzeichnis `/tmp/hello`, und gibt deren Inhalt aus. In dem anderen Terminal sollten nun Debug Messages zu sehen sein. Navigiert in dem Terminal in das Verzeichnis `/tmp/hello` und führt dort ein paar Dateioperationen aus (ls, mkdir, touch, cp, mv, ...). Die Operationen werden nicht funktionieren, da sie nicht implementiert sind, aber in dem anderen Terminal sollten bei jedem Kommando Debug Messages ausgegeben werden.
 **Frage: Welche Kommandos führen welche Operationen aus? Welche Operation wird am meisten ausgeführt?**
 2. In Aufgabe 1 solltet ihr bemerkt haben, dass eine Operation besonders oft ausgeführt wird. Öffnet die Datei `hello.c` in einem Editor (geany sollte mit dem Setup-Skript installiert worden sein) und ersetzt den Code der Funktion mit `return NULL;`.
-Führt nun wieder die oben beschriebenen Kommandos aus, um das Dateisystem neu zu erstellen. Führt es auch und führt Aufgabe 1 noch einmal aus.
+Führt nun wieder die oben beschriebenen Kommandos aus, um das Dateisystem neu zu erstellen. Mountet es und führt Aufgabe 1 noch einmal aus.
 **Frage: Was fällt euch hierbei auf?**
 
