@@ -18,7 +18,7 @@ Mounte jetzt das Big Brother Dateisystem mit folgendem Kommando:
 ```
 
 Das Dateisystem wird in das Verzeichnis `mountdir` gemountet. Mit dem Befehl `mount` kannst du dir dies bestätigen lassen.
-Navigiere in den Ordner `mountdir` und führe in dem Order ein paar Dateioperationen aus. Erstelle zum Beispiel ein paar Verzeichnisse und Dateien. Die Operationen werden in der Datei `bbfs.log` im Ordnet `example` geloggt. Lasse dir die Datei anzeigen. Sie enthält Informationen über alle ausgeführten Operationen.
+Navigiere in den Ordner `mountdir` und führe in dem Order ein paar Dateioperationen aus. Erstelle zum Beispiel ein paar Verzeichnisse und Dateien. Die Operationen werden in der Datei `bbfs.log` im Ordner `example` geloggt. Lasse dir die Datei anzeigen. Sie enthält Informationen über alle ausgeführten Operationen.
 
 Unmounte das Dateisystem mit dem Kommando `fusermount -u /pfad/zu/deinem/mountdir` und lasse dir anschließend wieder mit `ls -lR` den kompletten Inhalt von `example` anzeigen. 
 **Was fällt dir dabei auf?**
