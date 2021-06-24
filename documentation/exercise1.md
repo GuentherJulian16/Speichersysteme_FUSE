@@ -16,7 +16,7 @@ Im Ordner `bin` wird die Datei `hello` erstellt. Diese repräsentiert das FUSE D
 ```
 ./bin/hello /tmp/hello -f
 ```
-Das Dateisystem wird nun im Verzeichnis `/tmp/hello` gemountet. Die Option -f sorgt dafür, dass Debug Messages ausgegeben werden. Das Terminal ist daher blockiert.
+Das Dateisystem wird nun im Verzeichnis `/tmp/hello` gemountet. Die Option -f (foreground) sorgt dafür, dass das Dateisystem im Vordergrund ausgeführt wird. Das stellt sicher, dass die Print Befehle aus dem Code ausgegeben werden (das Terminal ist daher blockiert). Mit der Option -d lassen sich zusätzliche Debug Messages einschalten.
 Führt das Kommando `mount` in einem neuen Terminal aus. In der Ausgabe solltet ihr sehen, dass `hello` in `/tmp/hello` gemountet ist.
 
 ## Aufgaben
