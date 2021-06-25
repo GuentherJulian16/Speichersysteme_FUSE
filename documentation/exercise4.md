@@ -1,6 +1,6 @@
 # Beispiel 4 - Mein FUSE Dateisystem Part 2
 
-In diesem Beispiel werden wir unser FUSE Filesystem aus Aufgabe 3 so erweitern, dass auch Dateien und Verzeichnisse geschrieben werden können. Wir haben den Code schon so weit vorbereitet, dass das Erstellen von Verzeichnissen möglich ist. Euro Aufgabe ist es den Code so zu erweitern, dass auch Dateien geschrieben werden können. Eine Lösung finde ihr auch hier wieder in dem Ordner `solution`.
+In diesem Beispiel werden wir unser FUSE Filesystem aus Aufgabe 3 so erweitern, dass auch Dateien und Verzeichnisse geschrieben werden können. Wir haben den Code schon so weit vorbereitet, dass das Erstellen von Verzeichnissen möglich ist. Eure Aufgabe ist es den Code so zu erweitern, dass auch Dateien geschrieben werden können. Eine Lösung finde ihr auch hier wieder in dem Ordner `solution`.
 
 Zunächst eine kleine Erklärung zu dem bestehenden Code. Die Dateien (+ deren Inhalte) und Verzeichnisse werden in zweidimensionalen Arrays gespeichert.
 ```
